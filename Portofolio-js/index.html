@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript Code JavaScript  Java  programming">
+     <meta name="theme" content="#000">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+      <script src="https://cdn.tailwindcss.com"></script>
+    <title>JavaScript Website|Frontendprog</title>
+</head>
+<body class="bg-black scroll-smooth">
+ <header>
+    <nav class="bg-gray-900 text-white px-6 py-4 flex items-center justify-between">
+  <div class="text-3xl font-bold text-yellow-300">JavaScript</div>
+  <ul class="hidden md:flex space-x-6">
+    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+    <li><a href="#About" class="hover:text-gray-300">About</a></li>
+    <li><a href="#download" class="hover:text-gray-300">Download</a></li>
+    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+  </ul>
+  <button id="menu-btn" class="md:hidden focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+</nav>
+<ul id="menu" class="hidden flex-col space-y-4 bg-gray-800 text-white p-4 md:hidden">
+  <li><a href="#" class="hover:text-gray-300">Home</a></li>
+  <li><a href="#About" class="hover:text-gray-300">About</a></li>
+  <li><a href="#download" class="hover:text-gray-300">Download</a></li>
+  <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+</ul>
+ </header>
+       <div  id="content" class="bg-gray-800 h-60 m-2 text-center items-center">
+           <h2 class=" text-yellow-300 font-bold text-3xl p-20">JavaScript
+            <i  class="fa-solid fa-code"></i>
+          </h2>
+          <span class="inline-flex items-center bg-yellow-400 bg-opacity-20 text-white text-sm font-bold px-3 py-3 rounded-full mb-2 gap-2 mt-0 relative -top-10">
+<i class="fas fa-code"></i> Μάθετε <span id="dynamic-text-learn" class="typing-text-learn"></span><span class="blinking-cursor-learn">|</span>
+</span>
+       </div>
+    <div class="space-y-20"> 
+  <!-- About Section -->
+  <section id="About" class="bg-gray-800 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-8">
+        <div class="w-full lg:w-1/2">
+          <figure class="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src="img/js.png"
+              alt="Leagual JavaScript programming"
+              class="w-full h-54 sm:h-50 md:h-96 lg:h-full object-cover"
+              loading="lazy"
+              width="100"
+            />
+          </figure>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">About Us</h2>
+          <p class="mt-4 text-white text-base md:text-lg">
+           Η JavaScript είναι μια γλώσσα σεναρίων που βασίζεται στα πρωτότυπα (prototype-based), είναι δυναμική, με ασθενείς τύπους και έχει συναρτήσεις ως αντικείμενα πρώτης τάξης. Η σύνταξή της είναι επηρεασμένη από τη C. Η JavaScript αντιγράφει πολλά ονόματα και συμβάσεις ονοματοδοσίας από τη Java, αλλά γενικά οι δύο αυτές γλώσσες δε σχετίζονται και έχουν πολύ διαφορετική σημασιολογία. Οι βασικές αρχές σχεδιασμού της JavaScript προέρχονται από τις γλώσσες προγραμματισμού Self και Scheme.[3] Είναι γλώσσα βασισμένη σε διαφορετικά προγραμματιστικά παραδείγματα (multi-paradigm), υποστηρίζοντας αντικειμενοστρεφές,[4] προστακτικό και συναρτησιακό[5][6] στυλ προγραμματισμού
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="py-12 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-8">
+        <div class="w-full lg:w-2/2">
+          <figure class="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src="img/code-editor.png"
+              alt="Leagual JavaScript programming"
+              class="w-full h-54 sm:h-50 md:h-96 lg:h-full object-cover"
+              loading="lazy"
+              width="100"
+            />
+          </figure>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight m-10">Download JavaScript</h2>
+          <p class="mt-4 text-white text-base md:text-lg">
+            Εγκατέστησε την Javascript στον code editor σου και ξεκίνα να δημιουργείς διαδραστικά project!
+          </p>
+          <div id="list" class="flex flex-col text-white m-4 font-bold">
+            <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+            <li><a href="https://atom.io/">Atom</a></li>
+            <li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
+            <li><a href="https://www.vim.org/">Vim</a></li>
+            <li><a href="https://www.gnu.org/software/emacs/">GNU Emacs</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="contact" class="bg-gray-800 min-h-screen flex justify-center items-center">
+  <div class="bg-gray-900 p-8 rounded-lg shadow-lg w-full max-w-sm text-center">
+    <h2 class="text-2xl font-bold text-white mb-6">Contact Me</h2>
+    <form class="space-y-4">
+      <input 
+        type="text" 
+        placeholder="Username" 
+        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <input 
+        type="email" 
+        placeholder="Email" 
+        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <button 
+        type="submit" 
+        class="w-full bg-black hover:bg-gray-700 text-white font-semibold py-3 rounded-lg transition">Send
+      </button>
+    </form>
+  </div>
+</section>
+   <section class="bg-gray-800 text-white py-6 mt-10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-6">
+    <!-- Copyright -->
+    <p class="font-bold text-xl">&copy; 2025 JavaScript</p>
+    <!-- Links -->
+    <div id="links" class="flex space-x-6 text-2xl">
+      <a href="https://www.javascripttutorial.net/javascript-code-editors/" 
+         class="hover:text-blue-400 transition">
+        <i class="fa-brands fa-js"></i>
+      </a>
+      <a href="https://github.com/topics/javascript" 
+         class="hover:text-blue-400 transition">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://developer.x.com/en/docs/x-for-websites/javascript-api/guides/set-up-twitter-for-websites" 
+         class="hover:text-blue-400 transition">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
