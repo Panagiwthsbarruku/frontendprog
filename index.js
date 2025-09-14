@@ -97,3 +97,19 @@ document.addEventListener('DOMContentLoaded', function () {
     typeEffectLearn();
 
 });
+
+const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+        emailjs.sendForm("service_znq8eu5", "template_862z3x9   ", this)
+      .then(() => { 
+        alert("Το μήνυμα στάλθηκε με επιτυχία!");
+      }, (error) => {
+        alert("Σφάλμα: " + error.text);
+      });
+  });
+
+
+
