@@ -108,7 +108,7 @@ const form = document.getElementById("contact-form");
       }, (error) => {
         alert("Σφάλμα: " + error.text);
       });
-  });
+
 
 
 
