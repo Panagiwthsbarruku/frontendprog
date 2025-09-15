@@ -95,16 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         textarea.value += "\nΠακέτο: " + pkg;
     }
 
-const form = document.getElementById("contact-form");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-        emailjs.sendForm("service_u6vhpdm", "template_baegji9", this)
-      .then(() => { 
-        alert("Το μήνυμα στάλθηκε με επιτυχία!");
-      }, (error) => {
-        alert("Σφάλμα: " + error.text);
 
 
 
