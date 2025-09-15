@@ -86,10 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         setTimeout(typeEffectLearn, currentLearnSpeed);
     }
-
-});
-typeEffect();
+      typeEffect();
     typeEffectLearn();
+});
   // --- Message functionality ---
     function selectPackage(pkg) {
         let textarea = document.getElementById("message");
@@ -106,6 +105,7 @@ const form = document.getElementById("contact-form");
         alert("Το μήνυμα στάλθηκε με επιτυχία!");
       }, (error) => {
         alert("Σφάλμα: " + error.text);
+
 
 
 
