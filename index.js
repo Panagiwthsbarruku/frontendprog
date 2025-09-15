@@ -87,7 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(typeEffectLearn, currentLearnSpeed);
     }
 
-    // --- Message functionality ---
+});
+   // --- Message functionality ---
     function selectPackage(pkg) {
         let textarea = document.getElementById("message");
         textarea.value += "\nΠακέτο: " + pkg;
@@ -96,20 +97,19 @@ document.addEventListener('DOMContentLoaded', function () {
     typeEffect();
     typeEffectLearn();
 
-});
-
 const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-        emailjs.sendForm("service_znq8eu5", "template_862z3x9   ", this)
+        emailjs.sendForm("service_u6vhpdm", "template_baegji9", this)
       .then(() => { 
         alert("Το μήνυμα στάλθηκε με επιτυχία!");
       }, (error) => {
         alert("Σφάλμα: " + error.text);
       });
   });
+
 
 
 
