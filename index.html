@@ -190,7 +190,23 @@
 </body>
 <script src="index.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+      emailjs.init("qHpmBMrAVN_GqVJnU"); // Public Key
+    })();
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      emailjs.sendForm("service_urejypc", "template_6zn51bl", this)
+        .then(function() {
+          alert("Το μήνυμα στάλθηκε με επιτυχία! ✅");
+        }, function(error) {
+          console.log("FAILED...", error);
+          alert("Σφάλμα: " + JSON.stringify(error));
+        });
+    });
+  </script>
 </html>
+
 
 
 
