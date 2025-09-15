@@ -88,14 +88,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
-   // --- Message functionality ---
+typeEffect();
+    typeEffectLearn();
+  // --- Message functionality ---
     function selectPackage(pkg) {
         let textarea = document.getElementById("message");
         textarea.value += "\nΠακέτο: " + pkg;
     }
-    
-    typeEffect();
-    typeEffectLearn();
 
 const form = document.getElementById("contact-form");
 
@@ -107,7 +106,7 @@ const form = document.getElementById("contact-form");
         alert("Το μήνυμα στάλθηκε με επιτυχία!");
       }, (error) => {
         alert("Σφάλμα: " + error.text);
-      });
+
 
 
 
